@@ -1,0 +1,17 @@
+n1 = float(input("Qual sua nota 1? "))
+p1 = float(input("Qual o peso dela? "))
+n2 = float(input("Qual sua nota 2? "))
+p2 = float(input("Qual o peso dela? "))
+n3 = float(input("Qual sua nota 3? "))
+p3 = float(input("Qual o peso dela? "))
+
+pesos = [p1, p2, p3]
+
+media = (n1*p1+n2*p2+n3*p3) / (sum(pesos))
+
+print(f"Sua média é {media:.1f}")
+
+if media >= 6:
+    print("Você passou :D")
+else:
+    print("Vocênão passou :(")
